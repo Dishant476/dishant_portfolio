@@ -1,0 +1,12 @@
+.side-list a {
+    cursor: pointer;
+    color: var(--pale-blue);
+    transform : rotate(90deg);
+}
+
+.side-list a:hover {
+    filter: drop-shadow(0px 0px 5px var(--pale-blue));
+    animation: animate-links 1s linear infinite alternate;
+    font-size: var(--anchor-font-size);
+    transition: .2s linear;
+}

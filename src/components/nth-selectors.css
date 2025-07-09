@@ -1,0 +1,175 @@
+.bubbles span:nth-child(1) {
+    animation-duration: calc(120s / 11);
+}
+
+.bubbles span:nth-child(2) {
+    animation-duration: calc(120s / 12);
+}
+
+.bubbles span:nth-child(3) {
+    animation-duration: calc(120s / 24);
+}
+
+.bubbles span:nth-child(4) {
+    animation-duration: calc(120s / 10);
+}
+
+.bubbles span:nth-child(5) {
+    animation-duration: calc(120s / 14);
+}
+
+.bubbles span:nth-child(6) {
+    animation-duration: calc(120s / 23);
+}
+
+.bubbles span:nth-child(7) {
+    animation-duration: calc(120s / 18);
+}
+
+.bubbles span:nth-child(8) {
+    animation-duration: calc(120s / 16);
+}
+
+.bubbles span:nth-child(9) {
+    animation-duration: calc(120s / 19);
+}
+
+.bubbles span:nth-child(10) {
+    animation-duration: calc(120s / 20);
+}
+
+.bubbles span:nth-child(11) {
+    animation-duration: calc(120s / 22);
+}
+
+.bubbles span:nth-child(12) {
+    animation-duration: calc(120s / 25);
+}
+
+.bubbles span:nth-child(13) {
+    animation-duration: calc(120s / 18);
+}
+
+.bubbles span:nth-child(14) {
+    animation-duration: calc(120s / 21);
+}
+
+.bubbles span:nth-child(15) {
+    animation-duration: calc(120s / 15);
+}
+
+.bubbles span:nth-child(16) {
+    animation-duration: calc(120s / 13);
+}
+
+.bubbles span:nth-child(17) {
+    animation-duration: calc(120s / 26);
+}
+
+.bubbles span:nth-child(18) {
+    animation-duration: calc(120s / 17);
+}
+
+.bubbles span:nth-child(19) {
+    animation-duration: calc(120s / 13);
+}
+
+.bubbles span:nth-child(20) {
+    animation-duration: calc(120s / 28);
+}
+
+.bubbles span:nth-child(21) {
+    animation-duration: calc(120s / 11);
+}
+
+.bubbles span:nth-child(22) {
+    animation-duration: calc(120s / 12);
+}
+
+.bubbles span:nth-child(23) {
+    animation-duration: calc(120s / 24);
+}
+
+.bubbles span:nth-child(24) {
+    animation-duration: calc(120s / 10);
+}
+
+.bubbles span:nth-child(25) {
+    animation-duration: calc(120s / 14);
+}
+
+.bubbles span:nth-child(26) {
+    animation-duration: calc(120s / 23);
+}
+
+.bubbles span:nth-child(27) {
+    animation-duration: calc(120s / 18);
+}
+
+.bubbles span:nth-child(28) {
+    animation-duration: calc(120s / 16);
+}
+
+.bubbles span:nth-child(29) {
+    animation-duration: calc(120s / 19);
+}
+
+.bubbles span:nth-child(30) {
+    animation-duration: calc(120s / 20);
+}
+
+.bubbles span:nth-child(31) {
+    animation-duration: calc(120s / 22);
+}
+
+.bubbles span:nth-child(32) {
+    animation-duration: calc(120s / 25);
+}
+
+.bubbles span:nth-child(33) {
+    animation-duration: calc(120s / 18);
+}
+
+.bubbles span:nth-child(34) {
+    animation-duration: calc(120s / 21);
+}
+
+.bubbles span:nth-child(35) {
+    animation-duration: calc(120s / 15);
+}
+
+.bubbles span:nth-child(36) {
+    animation-duration: calc(120s / 13);
+}
+
+.bubbles span:nth-child(37) {
+    animation-duration: calc(120s / 26);
+}
+
+.bubbles span:nth-child(38) {
+    animation-duration: calc(120s / 17);
+}
+
+.bubbles span:nth-child(39) {
+    animation-duration: calc(120s / 13);
+}
+
+.bubbles span:nth-child(40) {
+    animation-duration: calc(120s / 28);
+}
+
+.cube div span:nth-child(1) {
+    transform: rotateY(calc(90deg * 0)) translateZ(50px); /* ? 100 / 2 = 50 */
+}
+
+.cube div span:nth-child(2) {
+    transform: rotateY(calc(90deg * 1)) translateZ(50px); /* ? 100 / 2 = 50 */
+}
+
+.cube div span:nth-child(3) {
+    transform: rotateY(calc(90deg * 2)) translateZ(50px); /* ? 100 / 2 = 50 */
+}
+
+.cube div span:nth-child(4) {
+    transform: rotateY(calc(90deg * 3)) translateZ(50px); /* ? 100 / 2 = 50 */
+}

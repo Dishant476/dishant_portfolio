@@ -1,0 +1,570 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Quicksand:wght@300;400;500;600&display=swap'); */
+
+/* * --------------------GLOBAL-------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* @font-face {
+  font-family: 'Quicksand', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Quicksand:wght@300;400;500;600&display=swap');
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #091B25;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--light-blob));
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, var(--semi-light-blob));
+}
+
+/* * -------------------VARIABLE CSS--------------------- */
+:root {
+  /* * -------------------COLOR PALATE--------------------- */
+
+  --black: #000000;
+  --navy-blue: #113547;
+  --brilliant-blue: #277ca5;
+  --light-blue: #64c2ec;
+  --pale-blue: #b8f5ff;
+  --fluorescent-yellow: #CCFF00;
+
+  /* ! ------------------COLOR PALATE FOR BLOBS------------------------- */
+
+  --light-blob: #79fdf9;
+  --semi-light-blob: #03edf4;
+  --medium-blob: #03cdff;
+  --dark-blob: #2368fb;
+
+  /* * -------------------FONT & TYPOGRAPHY---------------- */
+
+  --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* !1rem = 16px */
+  --extra-big-font-size: 4rem;
+  --big-font-size: 3rem;
+  --medium-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .820rem;
+  --tiny-font-size: .625rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --anchor-font-size: 1.1rem;
+
+  /* * --------------------FONT WEIGHT-------------------------- */
+  --normal-font: 400;
+  --bold-font: 500;
+  --semi-bold-font: 600;
+  --extra-bold-font: 700;
+}
+
+/* * --------------------RESPONSIVE TYPOGRAPHY----------------- */
+/* * ---------------Phones--------------------- */
+@media (300px <=width <=599px) {
+  :root {
+    --extra-big-font-size: 2.7rem;
+    --big-font-size: 2.5rem;
+    --medium-font-size: 1.7rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .865rem;
+    --smaller-font-size: .818rem;
+    --tiny-font-size: .620rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.3rem;
+    --h3-font-size: 1.10rem;
+    --anchor-font-size: 1.080rem;
+  }
+}
+
+/* * -------------------BASE----------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-weight: var(--normal-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: var(--anchor-font-size);
+  height: 5vh;
+  width: 10vw;
+  text-transform: capitalize;
+  border: .1rem solid var(--light-blob);
+  background: transparent;
+  transition: .3s ease-in-out;
+}
+
+.btn a {
+  color: var(--pale-blue);
+  font-weight: var(--semi-bold-font);
+}
+
+.btn:hover.btn a {
+  color: var(--navy-blue);
+}
+
+.btn:hover {
+  background: var(--light-blob);
+  filter: drop-shadow(0rem 0rem 3rem var(--light-blob));
+  animation: animate-btn 1s linear infinite alternate;
+}
+
+/* * ----------------------------------------REUSABLE CLASSES--------------------------------------- */
+
+/* ! ----------------------------------------HEIGHT----------------------------------------------- */
+
+.h-40 {
+  height: 40vh;
+}
+
+.h-90 {
+  height: 90vh;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.h-400 {
+  height: 400vh;
+}
+
+.h-5p {
+  height: 5%;
+}
+
+.h-50p {
+  height: 50%;
+}
+
+.h-90p {
+  height: 90%;
+}
+
+.h-100p {
+  height: 100%;
+}
+
+/* ! ---------------------------------------WIDTH------------------------------------------------- */
+
+.w-3 {
+  width: 3%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-97 {
+  width: 97%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* ! --------------------------------------FLEXING----------------------------------------------- */
+
+.adjust {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-even {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-column-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* ! -----------------------------------FILTERS--------------------------------------------------- */
+.blur {
+  filter: blur(3.5rem);
+}
+
+.semi-blur {
+  filter: blur(2.5rem);
+}
+
+.little-blur {
+  filter: blur(1.5rem);
+}
+
+.too-little-blur {
+  filter: blur(1.2rem);
+}
+
+
+
+
+/* ! -----------------------------------ANIMATIONS------------------------------------------------ */
+
+@keyframes animate-btn {
+  from {}
+
+  to {
+    transform: translateY(-1vh);
+  }
+}
+
+/* * --------------------------------------Media Queries-------------------------------- */
+/* * ------------------------------------Phones-------------------------------------------- */
+@media (300px <=width <=480px) {
+
+  /* * -------------HOME PAGE------------- */
+  .home-contents-inner {
+    width: 70%;
+    border-left: .1rem solid var(--light-blue);
+  }
+
+  .home-contents-inner span {
+    font-size: var(--big-font-size);
+  }
+
+  .home-contents-inner h1 {
+    font-size: var(--h1-font-size);
+  }
+
+  .btn {
+    width: 50vw;
+  }
+
+
+  .routing-container {
+    width: 90%;
+  }
+
+  .sidebar-container,
+  .sidebar-inner {
+    width: 10%;
+  }
+
+  .side-list li a {
+    font-size: var(--normal-font-size);
+
+  }
+
+  .enlarge {
+    width: 70vw;
+  }
+
+  /* * ------------------About Page----------------------------- */
+  .about-contents {
+    width: 90%;
+  }
+
+  .about-title {
+    font-size: var(--big-font-size);
+  }
+
+  .about-description {
+    padding-right: 1rem;
+    line-height: 1.4;
+    font-size: var(--normal-font-size);
+  }
+
+  .development-cubes {
+    display: none;
+  }
+
+  /* * --------------------Experience Page--------------------- */
+  .experience-inner {
+    height: 100%;
+  }
+
+  .experience-title {
+    font-size: var(--medium-font-size);
+  }
+
+  .cards-row .flex-column-start,
+  .cards-row .flex-column-end {
+    align-items: center;
+  }
+
+  .card {
+    width: 70vw;
+  }
+
+  .add-margin {
+    margin: 2.77rem 0rem;
+  }
+
+  /* * ------------------Contact Page----------------------- */
+  .contact-contents {
+    width: 95%;
+  }
+
+  .contact-link a {
+    font-size: var(--normal-font-size);
+    align-items: center;
+  }
+
+  .contact-link a svg {
+    padding: 1.3rem .4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+}
+
+/* * ------------------------------------Tablets------------------------------------------- */
+@media (481px <=width <=768px) {
+
+  /* * ----------------------Home Page------------------------- */
+  .sidebar-container,
+  .sidebar-inner {
+    width: 10%;
+  }
+
+  .routing-container {
+    width: 90%;
+  }
+
+  .btn {
+    width: 40vw;
+  }
+
+  /* * --------------------About Page-------------------------- */
+  .about-contents {
+    width: 90%;
+  }
+
+  .about-description {
+    padding-right: 1rem !important;
+    line-height: 1.4;
+    font-size: var(--normal-font-size);
+  }
+
+  .development-cubes {
+    display: none;
+  }
+
+  .enlarge {
+    width: 50vw !important;
+  }
+  
+  /* * --------------------Experience Page--------------------- */
+  .experience-inner {
+    height: 100%;
+  }
+
+  .experience-title {
+    font-size: var(--medium-font-size);
+  }
+
+  .cards-row .flex-column-start,
+  .cards-row .flex-column-end {
+    align-items: center;
+  }
+
+  .card {
+    width: 70vw;
+  }
+
+  .add-margin {
+    margin: 2.75rem 0rem !important;
+  }
+
+  /* * ------------------Contact Page----------------------- */
+  .contact-contents {
+    width: 95%;
+  }
+
+  .contact-link a {
+    font-size: var(--normal-font-size) !important;
+    align-items: center;
+  }
+
+  .contact-link a svg {
+    padding: 1.3rem .5rem !important;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+}
+
+/* * ------------------------------------Laptops------------------------------------------- */
+@media (769px <=width <=1024px) {
+  /* * ----------------------------Home Page----------------------- */
+  .sidebar-container,
+  .sidebar-inner {
+    width: 10%;
+  }
+
+  .routing-container {
+    width: 90%;
+  }
+
+  .btn {
+    width: 30vw;
+  }
+
+  /* * -----------------------------About Page--------------------- */
+  .about-contents {
+    width: 90%;
+  }
+
+  .about-description {
+    padding-right: 1rem !important;
+    line-height: 1.4;
+    font-size: var(--normal-font-size);
+  }
+
+  .development-cubes {
+    padding-top: 2rem !important;
+  }
+
+  .enlarge {
+    width: 30vw !important;
+  }
+  
+  /* * -----------------------------------Experience Page------------------------------- */
+  .experience-inner {
+    height: 100%;
+  }
+
+  .experience-title {
+    font-size: var(--medium-font-size);
+  }
+
+  .card {
+    width: 35vw;
+  }
+
+  .add-margin {
+    margin: 2.75rem 0rem !important;
+  }
+
+}
+
+/* * ------------------------------------Desktops------------------------------------------ */
+@media (1025px <=width <=1200px) {
+  /* * ------------------------------Home Page-------------------------------- */
+  .sidebar-container,
+  .sidebar-inner {
+    width: 5%;
+  }
+
+  .routing-container {
+    width: 95%;
+  }
+
+  .btn {
+    width: 30vw;
+  }
+
+  /* * --------------------------------About Page---------------------------------- */
+  .about-contents {
+    width: 90%;
+  }
+
+  .about-description {
+    padding-right: 5rem !important;
+    line-height: 1.4;
+    font-size: var(--normal-font-size);
+  }
+
+  .development-cubes {
+    padding-top: 5rem !important;
+  }
+
+  .enlarge {
+    width: 20vw !important;
+  }
+
+  /* * ----------------------------Experience Page--------------------------- */
+  .experience-inner {
+    height: 100%;
+  }
+
+  .experience-title {
+    font-size: var(--medium-font-size);
+  }
+
+  .card {
+    width: 35vw;
+  }
+
+  .add-margin {
+    margin: 2.7rem 0rem !important;
+  }
+}
+
+/* * -----------------------------------Large Screens-------------------------------------- */
+@media (1201px <=width <=3000px) {}

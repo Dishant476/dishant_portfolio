@@ -1,0 +1,99 @@
+.cube {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate-cubes 4s linear infinite;
+}
+
+.cube div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(var(--navy-blue),var(--semi-light-blob));
+    font-size: var(--anchor-font-size);
+    font-weight: var(--extra-bold-font); 
+    text-align: center;   
+}
+
+.backend div span {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(var(--navy-blue),var(--pale-blue));
+    font-size: var(--anchor-font-size);
+    font-weight: var(--extra-bold-font); 
+    text-align: center;   
+}
+
+.backend .top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: var(--light-blob);
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    filter: drop-shadow(0rem 0rem 8rem #b8f5ff74),
+    0rem 0rem 12.5rem #b8f5ff8b,
+    0rem 0rem 18.7rem #b8f5ffab,
+    0rem 0rem 25rem #b8f5ffd3,
+    0rem 0rem 31.2rem #b8f5ffe7;
+}
+
+.top {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    background: var(--navy-blue);
+    transform: rotateX(90deg) translateZ(50px);
+    font-size: var(--anchor-font-size);
+    font-weight: var(--extra-bold-font);
+    color: var(--pale-blue);
+    text-align: center;
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: var(--semi-light-blob);
+    transform: translateZ(-140px);
+    filter: blur(20px);
+    filter: drop-shadow(0rem 0rem 8rem #03ecf474),
+    0rem 0rem 12.5rem #02eaf28b,
+    0rem 0rem 18.7rem #02eaf2ab,
+    0rem 0rem 25rem #02eaf2d3,
+    0rem 0rem 31.2rem #02eaf2e7;
+}
+
+@keyframes animate-cubes {
+    from {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }   
+
+    to {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}

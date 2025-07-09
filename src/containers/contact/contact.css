@@ -1,0 +1,25 @@
+.contact-container {
+    position: relative;
+}
+
+.contact-inner {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right,#00000040,#1135478f,#277ba538);
+}
+
+.contact-content {
+    color: var(--pale-blue);
+}
+
+.contact-title {
+    color: var(--pale-blue);
+    font-size: var(--extra-big-font-size);
+    font-weight: var(--extra-bold-font);
+}
+
+.contact-description ul li a{
+    color: var(--pale-blue);
+    font-size: var(--medium-font-size);
+    font-weight: var(--bold-font);
+}

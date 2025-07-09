@@ -1,0 +1,31 @@
+.home-container {
+    position: relative;
+}
+
+.home-inner {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right,#0000008d,#113547b8,#277ba553);
+}
+
+.home-contents-inner {
+    border-left: .3rem solid var(--light-blue);
+}
+
+.home-contents-inner {
+    padding-left: 1.2rem;
+    animation: animate;
+}
+
+.home-contents-inner span {
+    color: var(--pale-blue);
+    font-size: var(--extra-big-font-size);
+    text-transform: uppercase;
+    font-weight: var(--extra-bold-font);
+} 
+
+.home-contents-inner h1 {
+    margin: 2.2rem 0;
+    color: var(--semi-light-blob);
+    text-transform: capitalize;
+}

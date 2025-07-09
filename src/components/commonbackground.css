@@ -1,0 +1,47 @@
+.bubble-container {
+    background: var(--black);
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    padding-left: 1.3rem;
+}
+
+.bubbles span {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background: var(--semi-light-blob);
+    margin: 0rem .3rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 0rem .5rem #277ba585,
+    0rem 0rem 3.3rem var(--medium-blob),
+    0rem 0rem 3.1rem var(--medium-blob);
+    filter: blur(1rem);
+    animation: animate-bubble 15s linear infinite alternate;
+}
+
+.bubbles span:nth-child(even) {
+    background: var(--fluorescent-yellow);
+    box-shadow: 0rem 0rem 0rem .5rem #CCFF0085,
+    0rem 0rem 3.3rem var(--fluorescent-yellow),
+    0rem 0rem 3.1rem var(--fluorescent-yellow); 
+}
+
+@keyframes animate-bubble {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-1vh) scale(1);
+    }
+}

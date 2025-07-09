@@ -1,0 +1,36 @@
+.about-container {
+    position: relative;
+}
+
+.about-inner {
+    background: linear-gradient(to right,#00000040,#1135478f,#277ba538);
+    position: absolute;
+    top: 0;
+}
+
+.about-title {
+    color: var(--pale-blue);
+    text-transform: capitalize;
+    font-size: var(--big-font-size);
+    font-weight: var(--extra-bold-font);
+}
+
+.about-description { 
+    color: var(--pale-blue);
+    padding-top: 1rem;
+    padding-right: 20rem;
+    line-height: 1.7;
+    font-size: var(--anchor-font-size);
+}
+
+.development-cubes {
+    padding-top: 5rem;
+}
+
+.download-cv {
+    padding: 1.2rem 0rem;
+}
+
+.enlarge {
+    width: 15vw;
+}

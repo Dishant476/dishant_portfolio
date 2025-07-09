@@ -1,0 +1,161 @@
+.blob-container {
+    overflow: hidden;
+    position: relative;
+    background: var(--black);
+}
+
+.blob {
+    position: absolute;
+    opacity: .7;
+}
+
+.big {
+    top: 15%;
+    left: 5%;
+    height: 30vh;
+    width: 18%;
+    background: var(--dark-blob);
+    border-radius: 59% 41% 58% 42% / 29% 44% 56% 71%;
+    animation: animate-big-blob 5s ease-out infinite alternate;
+}
+
+.mid {
+    top: 20%;
+    left: 40%;
+    height: 20vh;
+    width: 15%;
+    background: var(--medium-blob);
+    border-radius: 73% 27% 59% 41% / 69% 37% 63% 31%;
+    animation: animate-mid 4.5s ease-out infinite alternate;
+}
+
+.small {
+    top: 10%;
+    right: 10%;
+    height: 10vh;
+    width: 8%;
+    background: var(--semi-light-blob);
+    border-radius: 54% 46% 51% 49% / 34% 11% 89% 66%;
+    animation: animate-small 9s ease-out infinite alternate;
+}
+
+.extra-small {
+    top: 50%;
+    right: 30%;   
+    height: 7.5vh;
+    width: 6%;
+    background-color: var(--semi-light-blob);
+    border-radius: 92% 8% 46% 54% / 68% 20% 80% 32%;
+    animation: animate-extra-small 10s ease-out infinite alternate;
+}
+
+.bottom-left {
+    top: 63%;
+    left: 25%;
+    background-color: var(--semi-light-blob);
+    border-radius: 54% 46% 51% 49% / 34% 11% 89% 66%;
+    animation: animate-bottom-left 7s ease-out infinite alternate;
+}
+
+.bottom-right {
+    top: 73%;
+    left: 70%;
+    background-color: var(--medium-blob);
+    border-radius: 54% 46% 51% 49% / 34% 11% 89% 66%;
+    animation: animate-bottom-right 4.5s ease-out infinite alternate;
+}
+
+.bottom-little-far-left {
+    left: 10%;
+    top: 80%;
+    animation: animate-bottom-little-far-left 10s ease-out infinite alternate;
+}
+
+.bottom-mid {
+    top: 85%;
+    left: 45%;
+    background: var(--light-blob);
+    animation: animate-bottom-mid 8s ease-out infinite alternate;
+}
+
+/* * ----------------------------------ANIMATIONS--------------------------------------- */
+
+@keyframes animate-big-blob {
+    from {
+    }  
+
+    to {
+        border-radius: 52% 48% 44% 56% / 41% 25% 75% 59%;
+        transform: translate(8rem,5rem);
+    }
+}
+
+@keyframes animate-small { 
+    from {
+    }   
+    
+    to {
+        border-radius: 70% 30% 44% 56% / 76% 87% 13% 24%;
+        transform: translateX(-15rem);
+    }
+}
+
+@keyframes animate-bottom-right {
+    from {
+    }
+
+    to {
+        border-radius: 52% 48% 55% 45% / 80% 76% 24% 20%;
+        transform: translate(5rem,-10rem);
+    }
+}
+
+@keyframes animate-mid {
+    from {
+    }
+
+    to {
+        border-radius: 25% 75% 22% 78% / 23% 68% 32% 77% ;
+        transform: translate(5rem,7rem);
+    }
+}
+
+@keyframes animate-extra-small {
+    from {
+    }
+
+    to {
+        border-radius: 19% 81% 44% 56% / 43% 55% 45% 57%;
+        transform: translate(-15rem,10rem);
+    }
+}
+
+@keyframes animate-bottom-left {
+    from {
+    }
+
+    to {
+        border-radius: 66% 34% 61% 39% / 83% 72% 28% 17%;
+        transform: translate(7rem,-13rem);
+    }
+}
+
+@keyframes animate-bottom-mid {
+    from {
+    }
+
+    to {
+        border-radius: 56% 44% 61% 39% / 67% 66% 34% 33%;
+        transform: translate(-5rem,-10rem);
+    }
+}
+
+@keyframes animate-bottom-little-far-left {
+    from{
+    }
+
+    to {
+        border-radius: 32% 68% 77% 23% / 27% 22% 78% 73%;
+        transform: translate(15rem,2rem);
+    }
+}

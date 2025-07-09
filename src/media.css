@@ -1,0 +1,106 @@
+/* * ------------------------------------Phones-------------------------------------------- */
+@media (300px <=width <=480px) {
+
+    /* * -------------HOME PAGE------------- */
+    .home-contents-inner {
+        width: 70%;
+        border-left: .1rem solid var(--light-blue) !important;
+    }
+
+    .home-contents-inner span {
+        font-size: var(--big-font-size) !important;
+    }
+
+    .home-contents-inner h1 {
+        font-size: var(--h1-font-size) !important;
+    }
+
+    .btn {
+        width: 50vw !important;
+    }
+
+
+    .routing-container {
+        width: 90% !important;
+    }
+
+    .sidebar-container,
+    .sidebar-inner {
+        width: 10%;
+    }
+
+    .side-list li a {
+        font-size: var(--normal-font-size);
+
+    }
+
+    .enlarge {
+        width: 70vw !important;
+    }
+
+    /* * ------------------About Page----------------------------- */
+    .about-contents {
+        width: 90%;
+    }
+
+    .about-title {
+        font-size: var(--big-font-size) !important;
+    }
+
+    .about-description {
+        padding-right: 1rem !important;
+        line-height: 1.4 !important;
+        font-size: var(--normal-font-size) !important;
+    }
+
+    .development-cubes {
+        display: none !important;
+    }
+
+    /* * --------------------Experience Page--------------------- */
+    .experience-title {
+        font-size: var(--medium-font-size) !important;
+    }
+
+    .cards-row .flex-column-start,
+    .cards-row .flex-column-end {
+        align-items: center;
+    }
+
+    .card {
+        width: 70vw !important;
+    }
+
+    .add-margin {
+        margin: 2.77rem 0rem !important;
+    }
+
+    /* * ------------------Contact Page----------------------- */
+    .contact-contents {
+        width: 95%;
+    }
+
+    .contact-link a {
+        font-size: var(--normal-font-size) !important;
+        align-items: center;
+    }
+
+    .contact-link a svg {
+        padding: 1.3rem .4rem !important;
+        height: 1.2rem !important;
+        width: 1.2rem !important;
+    }
+
+}
+
+/* * ------------------------------------Tablets------------------------------------------- */
+@media (600px <=width <=800px) {}
+
+/* * ------------------------------------Laptops------------------------------------------- */
+@media (801px <=width <=1024px) {}
+
+/* * ------------------------------------Desktops------------------------------------------ */
+@media (1025px <=width <=1200px) {}
+
+/* * -----------------------------------Large Screens-------------------------------------- */
+@media (1201px <=width <=3000px) {}
